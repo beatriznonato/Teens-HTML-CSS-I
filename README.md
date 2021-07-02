@@ -34,9 +34,66 @@ fazendo uma programação que somente o servidor irá entender são chamados de 
   <img alt="imagem do deadpool caveira, com cores e se mexendo" src="https://moz-static.moz.com/youmoz_uploads/javascript-seo/5948abfc0e2df5.02876591.gif" width="500">
 </div>
 
-Onde o HTML é responsavél pela estrutura da página, o CSS pela estilização e o JavaScript pela interação.
+Onde o HTML é responsavél pela <b>estrutura</b> da página, o CSS pela <b>estilização</b> e o JavaScript pela <b>interação</b>.
 
 Nessas duas primeiras semanas iremos focar em <b>HTML & CSS</b>. 
 
+## HTML
+<div align="center">
+  <img alt="logo hmtl na cor laranja" src="https://logodownload.org/wp-content/uploads/2016/10/html5-logo-8.png" width="100">
+</div>
+  
+  HTML é abreviação de <b>Hyper Text Markup Language</b> é uma linguagem de marcação que usa uma sintaxe especial para descrever a estrutura de uma página da web para o navegador. Ou seja, não é uma linguagem de programação, pois não tem lógica (algoritmos).
+  
+- Tag
 
+A maiora dos elementos HTML possui uma tag de abertura e uma tag de fechamento.
+As tags de **abertura** têm a seguinte aparência:
+``` html
+<h1>
+```
+As tags de **fechamento** têm a seguinte aparência:
+``` html
+</h1>
+```
 
+- Títulos
+
+Os elementos **h1** são frequentemente usados para **títulos principais**, enquanto os elementos **h2** são geralmente usados para **subtítulos**. Existem também elementos h3, h4, h5 e h6 para indicar diferentes níveis de subposições.
+
+- Parágrafo
+
+Os elementos **p** são os elementos usados para **texto de parágrafo** em sites. p é a abreviatura de "parágrafo".
+``` html 
+<p> Sou uma tag p! </p>
+```
+
+Por convenção, todas as tags HTML são escritas em minúsculas, por exemplo:
+``` html
+ <p> </p> 
+```
+e não 
+``` html
+<P> </P>
+```
+
+- Lorem Ipsum
+
+A expressão [lorem ipsum](https://pt.wikipedia.org/wiki/Lorem_ipsum) é um texto padrão em latim utilizado por desenvolvedores web, designers gráficos, para preencher os espaços de texto em publicações (jornais, revistas, sites) para testar e ajustar aspectos visuais (layout, tipografia, formatação) antes de utilizar conteúdo real.
+
+Alguns links criativos para gerar o lorem ipsum:
+
+[catipsum](http://www.catipsum.com/)
+
+[cupcakeipsum](http://www.cupcakeipsum.com/)
+
+[pokemipsum](https://pokemipsum.com/)
+
+[cheeseipsum](http://www.cheeseipsum.co.uk/)
+
+- Comentários
+
+``` html
+<!-- Isso é um comentário. Comentar é uma maneira de deixar comentários para outros desenvolvedores em meu código, sem afetar a saída resultante que é exibida para o usuário final.
+Os comentários também são uma maneira conveniente de tornar o código inativo sem ter que excluí-lo por completo.-->
+```
