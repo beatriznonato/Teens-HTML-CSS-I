@@ -38,6 +38,10 @@ Onde o HTML é responsavél pela <b>estrutura</b> da página, o CSS pela <b>esti
 
 Nessas duas primeiras semanas iremos focar em <b>HTML & CSS</b>. 
 
+#### A estrutura de pastas básicas é:
+
+> O index.html é o padrão da Web de ser o primeiro arquivo processado pelo navegador, geralmente é usado como Home da página, por isso é criado na raiz do projeto e para o css o padrão é criar um arquivo nomeado de style.css uma pasta img para guardar as imagens.
+
 <hr>
 <div align="center">
   <img alt="logo hmtl na cor laranja" src="https://logodownload.org/wp-content/uploads/2016/10/html5-logo-8.png" width="100">
