@@ -673,6 +673,13 @@ padding: 5px;
 
 padding: 10px 5px 5px 10px;
 ```
+
+<div align="center">
+	<img alt="homem arrumando cortina na janela" src="https://static.imasters.com.br/wp-content/uploads/2014/07/css-blinds.gif">
+</div>
+
+## É comum e super normal errar muitas vez o CSS, aprendê-lo requer práticar muitas vezes.
+	
 ### Propriedade Display
 
 Entender a propriedade display é fundamental para que possamos compreender o fluxo e estruturação de uma página web. Todos os elementos por padrão já possuem um valor para a propriedade e, geralmente estas são block ou inline.
@@ -706,3 +713,27 @@ Semelhante ao inline, no entanto, ao definirmos **inline-block** em um elemento,
 - Flex
 
 É utilizado para organizar os elementos HTML de forma [responsiva](https://blog.betrybe.com/tecnologia/responsividade/). Na prática, ao definirmos um elemento com esse valor, ele funciona como um container para agrupar os elementos filhos, que são considerados flex-itens e são organizados nos sentidos horizontal ou vertical.
+
+## Dicas extras
+
+- Lorem Ipsum
+
+A expressão [lorem ipsum](https://pt.wikipedia.org/wiki/Lorem_ipsum) é um texto padrão em latim utilizado por desenvolvedores web, designers gráficos, para preencher os espaços de texto em publicações (jornais, revistas, sites) para testar e ajustar aspectos visuais (layout, tipografia, formatação) antes de utilizar conteúdo real.
+
+Alguns links criativos para gerar o lorem ipsum:
+
+[catipsum](http://www.catipsum.com/);
+
+[cupcakeipsum](http://www.cupcakeipsum.com/);
+
+[pokemipsum](https://pokemipsum.com/);
+
+[cheeseipsum](http://www.cheeseipsum.co.uk/);
+
+- Cores e Fonte
+
+[Nomes de Cores HTML&CSS](https://htmlcolorcodes.com/color-names/);
+
+[Extensão conta-gotas, visualiza cores utilizadas pelo site no inspetor de código](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=pt);
+
+[Extensão para visualizar fontes usadas pelo site](https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh);
