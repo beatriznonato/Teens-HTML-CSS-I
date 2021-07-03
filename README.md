@@ -248,6 +248,32 @@ O elemento ```<footer>``` representa o rodapé de um documento ou de uma seção
     </footer>
 ```
 
+### Listas
+
+- Criar uma lista *não ordenada* com marcadores
+
+As listas não ordenadas são usadas para listar itens, sem se preocupar com sua sequência. Chamamos de lista de marcadores apenas.
+
+Listas não ordenadas começam com um elemento `<ul>` de abertura, seguido por qualquer número de elementos `<li>`. Finalmente, as listas não ordenadas fecham com um `</ul>`
+```html
+<ul>
+  <li>milk</li>
+  <li>cheese</li>
+</ul>
+```
+
+- Criar lista *ordenada* ou lista *numeradas*
+
+As listas ordenadas ou numeradas são usadas para indicar alguma sequência ou numeração
+
+Listas ordenadas começam com um elemento `<ol>` de abertura, seguido por qualquer número de elementos `<li>`. Finalmente, as listas ordenadas são fechadas com a tag `</ol>`.
+```html
+<ol>
+  <li>Garfield</li>
+  <li>Sylvester</li>
+</ol>
+```
+
 ### Atributos de uma TAG
 
 Atributos são informações que passamos na Tag para que ela se comporte da maneira esperada. Existem atributos globais (que funcionam em todas as Tags) e específicos (que são direcionados para cada Tag, através de especificação).
