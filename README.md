@@ -248,9 +248,9 @@ O elemento ```<footer>``` representa o rodapé de um documento ou de uma seção
     </footer>
 ```
 
-### Listas
+### Criando Listas
 
-- Criar uma lista *não ordenada* com marcadores
+- Para criar uma lista *não ordenada* com marcadores
 
 As listas não ordenadas são usadas para listar itens, sem se preocupar com sua sequência. Chamamos de lista de marcadores apenas.
 
@@ -262,7 +262,7 @@ Listas não ordenadas começam com um elemento `<ul>` de abertura, seguido por q
 </ul>
 ```
 
-- Criar lista *ordenada* ou lista *numeradas*
+- Para criar lista *ordenada* ou lista *numeradas*
 
 As listas ordenadas ou numeradas são usadas para indicar alguma sequência ou numeração
 
@@ -273,6 +273,22 @@ Listas ordenadas começam com um elemento `<ol>` de abertura, seguido por qualqu
   <li>Sylvester</li>
 </ol>
 ```
+
+### Adicionando imagens
+
+Para adicionar imagens á página web é usado o elemento `img` e apontar para a URL de uma imagem especifica usando o atributo `src`.
+```html
+<img src="https://www.freecatphotoapp.com/your-image.jpg">
+```
+
+Todos os elementos img devem ter um atributo `alt`. O texto dentro de um atributo alt é usado para **leitores de tela para melhorar a acessibilidade** e é exibido se a imagem falhar ao carregar.
+``` html
+<img src="https://www.freecatphotoapp.com/your-image.jpg" alt="A business cat wearing a necktie.">
+```
+
+<i>
+  Se a imagem for puramente decorativa, usar um atributo alt vazio é uma prática recomendada. Idealmente, o atributo alt não deve conter caracteres especiais, a menos que seja necessário.
+</i>
 
 ### Atributos de uma TAG
 
