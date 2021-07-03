@@ -50,6 +50,10 @@ Nessas duas primeiras semanas iremos focar em <b>HTML & CSS</b>.
 ## HTML
   HTML é abreviação de <b>Hyper Text Markup Language</b> é uma linguagem de marcação que usa uma sintaxe especial para descrever a estrutura de uma página da web para o navegador. Ou seja, não é uma linguagem de programação, pois não tem lógica (algoritmos).
   
+<div align="center"> 
+<img alt="tela na cor azul mostrando escrita HTML e transita para tag" src="https://i.pinimg.com/originals/15/d5/4d/15d54d9da034f969e0711f031bf43ea9.gif" width="320">
+</div>
+
 - Tag
 
 A maiora dos elementos ```<html>``` possui uma tag de abertura e uma tag de fechamento.
@@ -381,5 +385,324 @@ o atributo ```rel=""``` indica o valor da conexão, que no caso é ```rel="style
 | class=" "	| Especifica uma ou mais classes para um elemento ou varios elementos (referência de classe para o CSS) |
 |id=" "	| Especifica uma unica id para um elemento (referência de id para o CSS) |
 
+<hr>
+
+<div align="center">
+	<img alt="logo css na cor azul" src="https://welcometoalex.space/img/conhecimentos/css3.png" width="100">
+</div>
+	
+CSS é abreviação de ***Cascading Style Sheet*** (folha de estilos em cascata). É a linguagem que define estilos para o HTML informando ao navegador como exibir os conteúdos, portanto, não se trata de linguagem de programação. CSS tem "cascata" no nome, devido a sua forma de determinar a propriedade de um elemento - levando em consideração hierarquia de seletores e de chamadas de estilo (inline, internal e external).
+Com CSS é possível controlar a cor, fonte, tamanho, espaçamento entre outros aspectos dos elementos HTML.
+
+<div align="center">
+	<img alt="robo colorido ao lado bloco de codigo que altera a cor do robo" src="https://4.bp.blogspot.com/-tlvMaNOcvEI/VwDbHWHYVwI/AAAAAAAAOmA/vj17H7jxWYgunK8w0h-2P1IV_ynoMVYPQ/s1600/CSS%2Bminify%2Bof%2BBlogger%2BSpice.gif" width="350">
+</div>
+	
+### Incluindo css na página
+
+Existem três formas para incluir o código CSS em seu projeto:
+	
+- Estilo inline
+	
+ Neste método, o CSS é aplicado diretamente no elemento, utilizando o atributo ```style```. É caracterizado por possuir uma implementação mais simples, no entanto, este método dificulta a manutenção do código.
+``` html
+    <p style=?color: white; background:black?>Hello, world!</p>
+```
+	
+- Estilo interno
+	
+ Caracteriza-se por escrever o código CSS, utilizando o comando ```<style>``` do HTML. Esse método é superior ao anterior, pois todas as regras CSS estão localizadas no ```<head>```. No entanto, essas regras só poderão ser utilizadas dentro deste documento, impedindo o compartilhamento e a reutilização das regras.
+``` html
+ <head>
+  <style>
+   * {margin: 0; padding: 0; box-sizing: border-box;}
+   body {width: 100%; height: 100vh;}
+  </style>
+ </head>
+```	
+	
+- Estilo externo
+ Para fazer o link de um arquivo .css basta criar um ou mais arquivos com extensão .css e incluí-los na estrutura head do HTML, com o href do caminho do arquivo.
+``` html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body></body>
+</html>
+```
+	
+Com o link também podemos importar fontes externas, exemplo [Google Fonts](https://fonts.google.com/)
+``` html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
+  </head>
+  <body></body>
+</html>
+```
+	
+E no arquivo `.css` aplicar a regra
+```
+font-family: 'Bona Nova', serif;
+```
+	
+### Seletores
+
+Para escrever código CSS é necessário seguir uma regra. A regra é uma declaração que possui uma sintaxe própria bem simples que define a forma com que o estilo será aplicado aos nossos elementos HTML. 
+	
+- { propriedade: valor }
+
+Dentro do arquivo `.css`, a sintaxe é:
+``` html
+seletor {
+  propriedade: valor;
+}
+```
+	
+Exemplo:
+``` hmtl
+p {
+  color: blue;
+}
+```
+	
+Explicando de forma grotesca o *seletor* nada mais é do que o nosso elemento HTML ao qual queremos aplicar a regra (por exemplo: div, body).
+
+A *propriedade* é o atributo do elemento que será aplicado a regra. (por exemplo: color, font, position).
+
+*Valor* é a característica que o elemento irá assumir (por exemplo: cor azul, tamanho 14 para a fonte).
+
+*É uma boa prática terminar as declarações de estilo embutido com um ;*
+
+- ID
+
+É um seletor individual usado para vincular somente um elemento por página web. Ele não pode ser usado em dois ou mais elementos. Para construí-lo basta que você crie um nome precedido pelo símbolo #.
+``` html
+#nome-do-identificador {
+   background-color: green; 
+}
+```
+	
+Veja agora com atribuir no HTML para que o elemento receba a cor de fundo verde:
+``` html
+<body id="nome-do-identificador">
+</body>	
+```
+
+- Class
+
+Este seletor possibilita o uso em mais de um elemento da mesma página. Indicado quando você precisa atribuir algumas propriedades iguais em elementos diferentes. Para construí-lo basta que você crie um nome precedido por um ponto.
+``` html
+	.nome-da-classe {
+color: blue; 
+}
+```
+	
+Veja como atrbuir no elemento HTML
+```html
+<h1 class="nome-da-classe">Título com cor azul</h1>
+```
+
+### Principais Propriedades CSS
+
+um resumo com as principais propriedades de estilo da linguagem CSS
+
+- **font-family**: Define a família da fonte utilizada
+```
+font-family: Arial, Verdana, Geneva, sans-serif;
+font-family: Arial, Verdana, Geneva, sans-serif;
+```
+
+- **font-style**: Define a propriedades de estilos que podem ser: normal, italic ou oblique.
+```
+font-style: italic;
+font-style: normal;
+```
+
+- **font-weight** : Define a propriedade de intensidade de uma fonte na sequência de valores de ‘100’ a ‘900’, cada número indica uma fonte mais intensa (escura) que o valor anterior. 
+```
+font-weight: normal;  (ou valores de 100 a 500)
+font-weight: bold;  (ou valores de 600 a 900)
+```
+
+- **font-size**: Define o tamanho da fonte. 
+``` 
+font-size: 12px;
+```
+
+- **letter-spacing**: Controla o espaçamento entre as letras de um texto.
+``` 
+letter-spacing: 5px;
+```
+
+- **word-spacing**: Controla o espaçamento entre as palavras de um texto.
+``` 
+word-spacing: 10px;
+```
+
+- **line-height**: Controla a altura entre as linhas do texto de um paragrafo.
+``` 
+line-height: 25px;
+```
+
+- **text-align**: Controla o posicionamento horizontal do conteúdo de um elemento. Os valores possíveis são: left, right, center e justify.
+``` 
+text-align: center;
+```
+
+- **text-decoration**: Define um efeito decorativo no texto. Podendo entre eles ser: none (sem decoração); underline (sublinhado); line-through(linha cortando o texto); e blink (efeito piscante).
+``` 
+text-decoration: underline;
+```
+
+- **text-transform**: Controla os efeitos de capitalização do texto. Com ela, podemos definir a caixa das letras (minúsculas e maiusculas). Os valores possíveis são:
+
+ capitalize – transforma o primeiro caracter de cada palavra em maiúscula
+ 
+ uppercase – transforma todas as letras de todas as palavras em maiúsculas
+ 
+ lowercase – transforma todas as letras de todas as palavras em minúsculas
+ 
+ none – cancela algum valor que tenha sido herdado
+``` 
+text-transform: uppercase;
+```
+
+- **text-indent**: Define o tamanho da endentação para a primeira linha do texto contida em um bloco, ou seja, o deslocamento para a direita de um paragrafo.
+``` 
+text-indent: 20px;
+```
+
+- **color**: Define a cor do texto de um texto.
+``` 
+color: red;
+
+color: rgb(255,0,0);
+
+color: #FF0000;
+```
+
+- **font**: Propriedade para definir em um único local vários estilos para a fonte. A sintaxe geral para font: [style] [variant] [weight] [size] [/line-height] [family].
+``` 
+font: normal small-caps bold 14px "Comic Sans MS", sans-serif;
+```
+
+> Os valores size e family são **obrigatórios**. Os demais são facultativos (se você os omitir será adotado o valor default ou herdado do elemento pai)
+
+- **width**: Define o comprimento (largura) de um elemento.
+```
+width: 100px;
+```
+
+- **height**: Define a altura de um elemento.
+ ```
+height: 50px;
+```
+
+- **border**: Define bordas para um elemento.
+ ```
+border:1px solid #CCC;
+
+border-bottom:5px solid #97B2B9;
+```
+
+- **background**: trata do fundo dos elementos. O elemento que mais recebe esta propriedade é o *body*.
+
+	As propriedades do background são:
+	
+	- **color**: Define a cor do fundo.
+	 ``` html
+	div {
+	  background-color: gray;
+	}
+	```
+
+	- **image**: Define a imagem de fundo.
+
+	*<b>url()</b>: Define a localização da imagem de fundo*.
+	``` html
+	div {
+	  background-image: url("../img/bg.png");
+	}
+	```
+	
+	- **repeat**: Define a posição de repetição da imagem de fundo.
+
+	*<b>no-repeat</b>: Não repete a imagem*.
+	``` html
+		div {
+	  background-repeat: no-repeat;
+	}
+	```
 
 
+- **opacity**: Especifica a opacidade/transparência de um elemento
+A propriedade opacidade pode assumir um valor de **0,0 a 1,0**. Quanto menor o valor, mais transparente
+```
+img {
+  opacity: 0.5;
+}
+```
+
+- **margin**: Controla as margens de um elementos. Se forem indicados quatro valores, eles dizem respeito, respectivamente, às margens superior, direita, inferior e esquerda. Se for fornecido apenas um valor, ele é aplicado às quatro margens.
+```
+margin: 15px;
+
+margin: 10px 1px 5px 20px;
+```
+
+A última atribuição so exemplo acima é:
+```
+margin-top: 10px;
+
+margin-right: 1px;
+
+margin-bottom: 5px;
+
+margin-left: 20px;
+```
+
+- **padding**: Controla os espaçamentos de um elementos. Se forem indicados quatro valores, eles dizem respeito, respectivamente, aos espaçamentos superior, direito, inferior e esquerdo. Se for fornecido apenas um valor, ele é aplicado aos quatro espaçamentos.
+```
+padding: 5px;
+
+padding: 10px 5px 5px 10px;
+```
+### Propriedade Display
+
+Entender a propriedade display é fundamental para que possamos compreender o fluxo e estruturação de uma página web. Todos os elementos por padrão já possuem um valor para a propriedade e, geralmente estas são block ou inline.
+
+> *Todo elemento em uma página web é renderizado como uma caixa retangular. A propriedade <b>display</b> de CSS vai determinar como essa caixa vai ser comportar*
+
+#### Os possíveis tipos
+
+- Block
+
+O elemento se comporta como um **bloco**. Ocupando praticamente toda a largura disponível na página. Elementos de parágrafo (**p**) e título(**h1**, **h2**, ...) possuem esse comportamento por padrão.
+
+- Inline
+
+O elemento se comporta como um elemento em **linha**. Exemplos de elemento que se comportam assim são por exemplo as tags **span** e **a**.
+
+- None
+
+Ao contrários dos valores atuais, o valor none permite, informalmente dizendo, que você **desative** a propriedade do elemento. Quando você utiliza essa propriedade, o elemento e todos seus elementos filhos ***não são renderizados na página***.
+
+Uma coisa importante a ressaltar que a propriedade **display: none** não é a mesma coisa da propriedade **visibility: hidden**. Nessa última o elemento não aparece na tela mas é renderizado na página, ou seja, vemos um espaço vazio no lugar do elemento; já a propriedade **display: none** não renderiza o elemento e, o espaço que era ocupado por ele, é ocupado pelo elemento seguinte no fluxo do documento.
+
+- Table
+
+O elemento se comporta como uma **tabela**.
+
+- Inline-block
+
+Semelhante ao inline, no entanto, ao definirmos **inline-block** em um elemento, conseguimos definir as propriedades de **largura** e **altura** para ele. Coisa que não conseguimos em um elemento com **display: inline**.
+
+- Flex
+
+É utilizado para organizar os elementos HTML de forma [responsiva](https://blog.betrybe.com/tecnologia/responsividade/). Na prática, ao definirmos um elemento com esse valor, ele funciona como um container para agrupar os elementos filhos, que são considerados flex-itens e são organizados nos sentidos horizontal ou vertical.
