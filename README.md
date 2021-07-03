@@ -286,9 +286,64 @@ Todos os elementos img devem ter um atributo `alt`. O texto dentro de um atribut
 <img src="https://www.freecatphotoapp.com/your-image.jpg" alt="A business cat wearing a necktie.">
 ```
 
-<i>
-  Se a imagem for puramente decorativa, usar um atributo alt vazio é uma prática recomendada. Idealmente, o atributo alt não deve conter caracteres especiais, a menos que seja necessário.
-</i>
+*Se a imagem for puramente decorativa, usar um atributo alt vazio é uma prática recomendada. Idealmente, o atributo alt não deve conter caracteres especiais, a menos que seja necessário.*
+
+### Utilizando link
+
+- Link para páginas externas
+
+Para criar um link para conteúdo fora da página web pode-se usar o elemento `a` (ancora), que usa o atributo `href` que vai receber o link da página externa.
+```html
+<a href="https://www.freecodecamp.org">this links to freecodecamp.org</a>
+```
+- Link para páginas internas
+
+O elemento `a` (ancora) também pode ser usado para criar links internos para diferentes seções em uma página da web.
+Para criar um link interno é adicionado no link do atributo `href` o símbolo `#` mais o valor do atributo `id` para o elemento que será vinculado. É necessário adicionar o mesmo atributo `id` ao elemento ao qual está vinculando.
+```html
+<a href="#contacts-header">Contacts</a>
+...
+<h2 id="contacts-header">Contacts</h2>
+```
+
+Quando os usuários clicarem no link Contatos, eles são direcionados à seção da página da web com o elemento de cabeçalho Contatos.
+
+- Aninhar um elemento âncora dentro de um parágrafo
+
+É possível aninhar links em outros elementos de texto.
+```html
+<p>
+  Here's a <a target="_blank" href="https://www.freecodecamp.org"> link to www.freecodecamp.org</a> for you to follow.
+</p>
+```
+
+`target` é um atributo de marca de âncora que especifica **onde abrir o link**.
+
+O valor `_blank` especifica para **abrir** o link em uma **nova guia**.
+
+O `href`é um atributo de tag âncora que contém o endereço **URL do link**.
+
+`top` abre o documento no corpo **todo da janela**.
+
+- Link inativo
+
+Para criar um link inativo, basta adicionar `#` no atributo `href`, ao invés da url.
+
+É usado quando é necessaŕio adicionar elementos ao site antes de saber para onde eles serão vinculados.
+```html
+href="#"
+```
+
+- Transformar uma imagem em um link
+
+É possível transformar elementos em links, aninhando-os em um elemento `a`.
+```html
+<a href="#">
+	 <img src="https://www.bit.ly/fcc-running-cats" alt="Three kittens running towards the camera.">
+</a>
+```
+
+*Depois de fazer isso, passe o cursor sobre a imagem. O ponteiro normal do cursor deve se tornar o ponteiro para clicar no link. A foto agora é um link.*
 
 ### Atributos de uma TAG
 
