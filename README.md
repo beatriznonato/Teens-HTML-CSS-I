@@ -714,7 +714,7 @@ Semelhante ao inline, no entanto, ao definirmos **inline-block** em um elemento,
 
 É utilizado para organizar os elementos HTML de forma [responsiva](https://blog.betrybe.com/tecnologia/responsividade/). Na prática, ao definirmos um elemento com esse valor, ele funciona como um container para agrupar os elementos filhos, que são considerados flex-itens e são organizados nos sentidos horizontal ou vertical.
 
-## Dicas extras
+## Dicas extras (:
 
 - Lorem Ipsum
 
@@ -730,10 +730,50 @@ Alguns links criativos para gerar o lorem ipsum:
 
 [cheeseipsum](http://www.cheeseipsum.co.uk/);
 
-- Cores e Fonte
+- Cores 
 
 [Nomes de Cores HTML&CSS](https://htmlcolorcodes.com/color-names/);
 
-[Extensão conta-gotas, visualiza cores utilizadas pelo site no inspetor de código](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=pt);
+[Coolors - paleta de cores](https://coolors.co/);
+
+[Flat UI Colors - paleta de cores](https://flatuicolors.com/);
+
+- Extensão para selecionar cores
+
+[ColorPick Eyedropper](https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg);
+
+[Color by Fardos](https://chrome.google.com/webstore/detail/color-by-fardos/iibpgpkhpfggipbacjfeijkloidhmiei);
+
+[ColorPicker](https://chrome.google.com/webstore/detail/color-picker/mggikgocakmeahcgffajljnpnbcoaddn?hl=pt);
+
+[CollorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=pt);
+
+- Fontes
+
+[Google Fonts](https://fonts.google.com/);
 
 [Extensão para visualizar fontes usadas pelo site](https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh);
+
+- Icones
+
+[FlatIcon](https://www.flaticon.com/)
+
+[FontAwesome](https://fontawesome.com/v5.15/icons?d=gallery&p=2);
+
+- Banco de Imagens
+
+[Unsplash](https://unsplash.com/);
+
+[Imagens de fundo](https://imagens-de-fundo.blogspot.com/);
+
+[Freepik](https://br.freepik.com/);
+
+[Imagens de pessoas negras e marrons](https://nappy.co/);
+
+[Canva](https://www.canva.com/);
+
+[Pixabay](https://pixabay.com/);
+
+[Negativespace](https://negativespace.co/);
+
+[Pexels](https://www.pexels.com/pt-br/);
