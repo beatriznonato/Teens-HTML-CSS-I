@@ -714,6 +714,7 @@ Semelhante ao inline, no entanto, ao definirmos **inline-block** em um elemento,
 
 É utilizado para organizar os elementos HTML de forma [responsiva](https://blog.betrybe.com/tecnologia/responsividade/). Na prática, ao definirmos um elemento com esse valor, ele funciona como um container para agrupar os elementos filhos, que são considerados flex-itens e são organizados nos sentidos horizontal ou vertical.
 
+
 ## Dicas extras (:
 
 - Lorem Ipsum
@@ -777,3 +778,10 @@ Alguns links criativos para gerar o lorem ipsum:
 [Negativespace](https://negativespace.co/);
 
 [Pexels](https://www.pexels.com/pt-br/);
+
+
+<h4 align="center">Bons estudos !!!<h4>
+
+<div align="center">
+	<img alt="gato preto digitando no notebook" src="https://pa1.narvii.com/7317/bbcf367e85ac4467ed8a27be5870baf932a05552r1-480-480_hq.gif" width="280">
+<div>
