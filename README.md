@@ -422,6 +422,7 @@ Existem três formas para incluir o código CSS em seu projeto:
 ```	
 	
 - Estilo externo
+
  Para fazer o link de um arquivo .css basta criar um ou mais arquivos com extensão .css e incluí-los na estrutura head do HTML, com o href do caminho do arquivo.
 ``` html
 <!DOCTYPE html>
@@ -656,7 +657,7 @@ margin: 15px;
 margin: 10px 1px 5px 20px;
 ```
 
-A última atribuição so exemplo acima é:
+A última atribuição do exemplo acima é:
 ```
 margin-top: 10px;
 
