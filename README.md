@@ -2,7 +2,7 @@
 
 Turma Teens { Reprograma }| Online | Fundamentos de HTML e CSS. 
 
-Plano de aula desenvolvido para a <b>primeira semana</b> do curso. As aulas vão acontecer nos dias 03 (sábado) e 06 (quarta-feira) de julho 2021.
+Plano de aula desenvolvido para a <b>primeira semana</b> do curso. As aulas foram ministradas nos dias 03 (sábado) e 06 (quarta-feira) de julho 2021.
 
 ## Client-side and Server-Side
 
